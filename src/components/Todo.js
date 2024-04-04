@@ -7,35 +7,19 @@ const Todo = ({ todos, deleteTodo, updateStatus }) => {
   return (
     <div>
       {todos.map(task => {
-        if (task.isCompleted) {
             return (
-              <div className='todo-list'>
-                <input type='checkbox' checked={task.isCompleted} onClick={() => updateStatus(task.id, task.isCompleted)}></input>
-                <p >{task.name}</p>
-
-                {/* <div className='todo-icons'> */}
-                <div>
-                  <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} />
-                  <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
-
+                <div className='todo-list'>
+                  <input type='checkbox' checked={task.isCompleted} onClick={() => updateStatus(task.id, task.isCompleted)}></input>
+                  <p>{task.name}</p>
+                  <div className='todo-icons'> 
+                    {/* <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} /> */}
+                    <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
+                  </div>
                 </div>
-              </div>
+
             )
-        }
-        // return (
-        //   <div className='todo-list'>
-        //     <p >{task.name}</p>
-
-        //     {/* <div className='todo-icons'> */}
-        //     <div>
-        //       <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} />
-        //       <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
-
-        //     </div>
-        //   </div>
-        // )
-      }
-      )
+          }
+        )
       }
     </div>
   )

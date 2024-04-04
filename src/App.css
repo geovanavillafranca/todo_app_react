@@ -1,21 +1,11 @@
 .App {
   text-align: center;
-  padding: 10px 40px;
-  border-radius: 10px
+  padding-top: 80px;
+  border-radius: 10px;
 }
 
 .task-name{
   color: white;
-}
-.App-header {
-  
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #61dafb;
 }
 
 .save-task{ 
@@ -23,83 +13,60 @@
   align-items: center;
   justify-content: center;
   padding: 5%;
-
-}
-
-.todo-btn {
-  padding: 0.55rem;
-  cursor: pointer;
-  background-color: #61dafb;
-  color: #282c34;
-}
-.fa-trash {
-  margin-left: 0.75rem;
-  color: red;
 }
 
 .todo-input {
-  padding: 0.55rem;
+  padding: 0.52rem;
+  
 }
+.todo-btn-save {
+  padding: 0.524rem;
+  cursor: pointer;
+  background-color: #22a1c4;
+  border-radius: 5px;
+  border: none;
+}
+
+.plus-icon {
+  font-size: 1.5em; 
+  vertical-align: middle; 
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: rgb(219, 38, 38);
+}
+
 .todo-input::placeholder {
   color: #0707074d;
 }
 
-
-/* .todo-list {
-  background-color: #FFF;
-  border-radius: 5px;
-  width: 20%;
-  padding: 10px;
-  margin-top: 1%;
-  word-wrap: break-word;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* .todo-list{
-  display: block;
-  width: 20%;
-  justify-content: space-between;
-  align-items: center;
-  background: #238ba8;
-  color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  word-wrap: break-word;
-  margin-bottom: 1rem;
-} */
-
-.todo-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #8758ff;
-  color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
 .edit-icon, 
 .delete-icon {
   cursor: pointer;
 }
+
 .todo-icons{
-  justify-content: right;
+  padding-right: 2%;
 }
 
-
+.todo-list {
+  justify-content: space-between;
+  background: #60697a;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
 
 .flex-container {
-  display: flex;
-}
-
-.flex-item {
-  flex: 1;
   background-color: #fff;
-  text-align: center;
-  padding: 1.5rem 1.5rem;
-  margin-left: 1rem;
+  width: 90%;  
+  max-width: 700px; 
+  padding: 1rem;
   border-radius: 8px;
-
+  margin-top: 5%;
+  margin-left: auto;  
+  margin-right: auto; 
 }
