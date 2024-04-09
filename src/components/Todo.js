@@ -10,7 +10,7 @@ const Todo = ({ todos, deleteTodo, updateStatus }) => {
             return (
                 <div className='todo-list'>
                   <input type='checkbox' className='todo-checkbox' checked={task.isCompleted} onClick={() => updateStatus(task.id, task.isCompleted)}></input>
-                  <p>{task.name}</p>
+                  <p style={{textDecoration : task.isCompleted ? 'line-through' : "none", color: task.isCompleted ? "grey" : "white"}}>{task.name}</p>
                   <div className='todo-icons'> 
                     {/* <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} /> */}
                     <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />

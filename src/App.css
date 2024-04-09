@@ -23,7 +23,7 @@
 .todo-btn-save {
   /* padding: 0.45rem; */
   cursor: pointer;
-  background-color: #22a1c4;
+  background-color: #22345700;
   border-radius: 5px;
   border: none;
 }
@@ -57,7 +57,7 @@
 
 .todo-list {
   justify-content: space-between;
-  background: #60697a;
+  background: #223457f8;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 1rem;
