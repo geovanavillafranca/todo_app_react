@@ -22,6 +22,7 @@ function App() {
     axios.post(url, {'name':task}).then((response) =>{
       setTodo([...todo, response.data])
     })
+    setTask('')
   }
 
   const deleteTodo = (id) => {
@@ -37,6 +38,7 @@ function App() {
 
     setTodo(newTodo)
   }
+
 
   return (
     <div className="App">
